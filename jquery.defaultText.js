@@ -1,6 +1,6 @@
 /*
-DefaultText v0.2
-Copyright (C) 2010 by Lucas Jenﬂ
+DefaultText v1.0
+Copyright (C) 2010 by Lucas Jenss - Gosign media. GmbH
 Tested with jQuery 1.4.2
 
 This program is free software: you can redistribute it and/or modify
