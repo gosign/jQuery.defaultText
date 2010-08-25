@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>jquery.defaultText.js</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.defaultText.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				jQuery('input#field1').defaultText('This is field 1');
+				jQuery('input#field2').defaultText({text: 'This is field 2', clearOnSubmit: false});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<form onsubmit="return false;">
+			<input id="field1" type="text" />
+			<input id="field2" type="text" />
+			<input type="submit" />
+		</form>
+	</body>
+</html>
