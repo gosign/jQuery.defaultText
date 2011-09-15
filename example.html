@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html 
+<!DOCTYPE html
      PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -9,16 +9,18 @@
 		<script type="text/javascript" src="jquery.defaultText.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function() {
-				jQuery('input#field1').defaultText('This is field 1');
-				jQuery('input#field2').defaultText({text: 'This is field 2', clearOnSubmit: false});
+				jQuery('#field1').defaultText('This is field 1');
+				jQuery('#field2').defaultText({text: 'This is field 2', clearOnSubmit: false});
+				jQuery('#field3').defaultText({text: 'This is field 3'});
 			});
 		</script>
-		
+
 	</head>
 	<body>
 		<form onsubmit="return false;">
-			<input id="field1" type="text" />
-			<input id="field2" type="text" />
+			<input id="field1" type="text" /> <br/>
+			<input id="field2" type="text" /> <br/>
+			<textarea id="field3"></textarea> <br/>
 			<input type="submit" />
 		</form>
 	</body>
