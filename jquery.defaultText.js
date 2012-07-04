@@ -40,7 +40,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			
 			obj.focus(onfocus);
 			obj.blur(onblur);
-			
+
+			// Reset the default text if the AJAX request for the
+			// form is complete. This is needed because the AJAX
+			// form may not disappear after submitting.
+			obj.closest('form').bind('ajaxComplete', function() {
+				obj.blur();
+			});
+
 			if(config.clearOnSubmit) {
 				obj.closest('form').submit(function() { onsubmit(obj); });
 			}
